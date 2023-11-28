@@ -85,9 +85,10 @@ rules:
 
     shardingAlgorithms:
       database-inline:
-        type: INLINE
+        type: DB_HINT
         props:
-          algorithm-expression: ds_${org_id % 2}
+          algorithmClassName: com.zengpeng.shardingmybatisplus.config.DBStandardShardingStrategy
+#          algorithm-expression: ds_${org_id % 2}
       t-order-inline:
         type: TABLE_HINT
 #        type: INLINE

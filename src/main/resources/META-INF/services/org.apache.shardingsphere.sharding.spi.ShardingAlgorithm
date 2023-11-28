@@ -1,1 +1,2 @@
 com.zengpeng.shardingmybatisplus.config.TableStandardShardingStrategy
+com.zengpeng.shardingmybatisplus.config.DBStandardShardingStrategy
